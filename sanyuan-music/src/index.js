@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
-import routes from './routers/index'
+import routes from './routes/index'
 
 ReactDOM.render(
   <React.StrictMode>
