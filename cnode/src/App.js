@@ -1,20 +1,20 @@
 import React from 'react';
+// import {} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
 import PrivateRoute from './PrivateRoute';
-import Collect from './Collect';
-// import { isReaction } from 'mobx/lib/internal';
 import Login from './Login';
-
+import Collect from './Collect';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       header
-      <Route path="/login" component={Login} />
-      <PrivateRoute path="/collect" component={Collect} />
-    </ BrowserRouter>
+      <Route path='/' component={Login} />
+      <Route path='/login' component={Login} />
+      <PrivateRoute path='/collect' component={Collect} />
+    </BrowserRouter>
   );
 }
 

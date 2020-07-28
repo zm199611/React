@@ -1,10 +1,15 @@
-class Auth{
-    islogin = false //没有和页面绑定在一起
+import { observable ,action } from 'mobx'
 
-    login(){
-        this.isLogin = true;
+class Auth {
+    @observable isLogin = true  // 没有和页面绑定在一起
+
+    @action
+    login() {
+        this.isLogin = true
     }
-    loginout(){
-        this.isLogin = false;
+    logout(){
+        this.isLogin = false
     }
-}
+} 
+
+export default new Auth()
