@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import style from '../../assets/global-style';
 
-export const NavContainer  = styled.div`
+export const NavContainer = styled.div`
   box-sizing: border-box;
   position: fixed;
   top: 95px;
@@ -10,7 +10,7 @@ export const NavContainer  = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const ListContainer = styled.div`
   position: fixed;
@@ -54,10 +54,3 @@ export const ListItem = styled.div`
     font-weight: 500;
   }
 `;
-export const EnterLoading = styled.div`
-  position: fixed;
-  left: 0; right: 0; top: 0; bottom: 0;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-`
